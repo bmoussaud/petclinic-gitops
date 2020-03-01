@@ -13,13 +13,13 @@ spec:
       - name: petclinic
         type: jee.War
         scanPlaceholders: true
-        file: !file "../PetClinic/target/PetClinic.war"
+        file: !file "artifacts/PetClinic.war"
       - name: petclinic-backend
         type: jee.War
-        file: !file "../PetClinic-Backend/target/PetClinic-Backend.war"
+        file: !file "artifacts/PetClinic-Backend.war"
       - name: sql
         type: sql.SqlScripts
-        file: !file "../dar/sql"
+        file: !file "artifacts/sql"
       - name: petDataSource
         type: jee.DataSourceSpec
         jndiName: jdbc/petds
@@ -29,5 +29,5 @@ spec:
         expectedResponseText: '{{TITLE}}'
       - name: logger
         type: app.Logger
-        file: !file "../dar/config"
+        file: !file "artifact/config"
         scanPlaceholders: true
