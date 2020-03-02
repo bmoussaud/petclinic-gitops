@@ -8,10 +8,10 @@ spec:
     - name: PetClinic Dictionary
       type: udm.Dictionary
       entries:
-        TITLE: !value title
+        TITLE: devops
         logFilePath: /dev/null
         logRootLevel: DEBUG
-        title: !value title
+        title: devops
         logLevel: DEBUG
         timeout: 30
         smoke.test.url: http://deployit.vm:13080/petclinic/index.jsp

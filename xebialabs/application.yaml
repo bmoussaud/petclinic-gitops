@@ -7,7 +7,7 @@ spec:
   - name: PetPortal
     type: udm.Application
     children:
-    - name: !value appversion
+    - name: 1.0.1
       type: udm.DeploymentPackage
       children:
       - name: petclinic
@@ -27,7 +27,3 @@ spec:
         type: smoketest.HttpRequestTest
         url: '{{smoke.test.url}}'
         expectedResponseText: '{{TITLE}}'
-      - name: logger
-        type: app.Logger
-        file: !file "artifact/config"
-        scanPlaceholders: true
