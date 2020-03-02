@@ -7,5 +7,5 @@ spec:
 apiVersion: xl-deploy/v1
 kind: Environments
 spec:
-- name: Environments/Dev
+- name: Environments/Prod
   type: core.Directory

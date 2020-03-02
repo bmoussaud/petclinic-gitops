@@ -2,7 +2,7 @@
 apiVersion: xl-deploy/v1
 kind: Infrastructure
 spec:
-- directory: Infrastructure/AsCode
+- directory: Infrastructure/Prod
   children:
   - name: host-vm
     type: overthere.SshHost
