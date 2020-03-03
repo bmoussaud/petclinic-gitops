@@ -1,7 +1,7 @@
 apiVersion: xl-deploy/v1
 kind: Deployment
 spec:
-  package: Applications/Java/PetPortal/1.0.6
+  package: Applications/Java/PetPortal/1.0.5
   environment: Environments/Dev/Tomcat-Dev-AsCode
   #orchestrators:
   #  - parallel-by-deployment-group
