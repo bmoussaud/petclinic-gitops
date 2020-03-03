@@ -7,22 +7,13 @@ spec:
   - name: PetPortal
     type: udm.Application
     children:
-    - name: 1.0.3
+    - name: 1.0.4
       type: udm.DeploymentPackage
       children:
       - name: petclinic
         type: jee.War
         scanPlaceholders: true
         file: !file "artifacts/PetClinic.war"
-      - name: petclinic-backend
-        type: jee.War
-        file: !file "artifacts/PetClinic-Backend.war"
-      - name: sql
-        type: sql.SqlScripts
-        file: !file "artifacts/sql"
-      - name: petDataSource
-        type: jee.DataSourceSpec
-        jndiName: jdbc/petds
       - name: testPage
         type: smoketest.HttpRequestTest
         url: '{{smoke.test.url}}'
