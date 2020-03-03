@@ -7,7 +7,7 @@ spec:
   - name: PetPortal
     type: udm.Application
     children:
-    - name: 1.0.5
+    - name: 1.0.6
       type: udm.DeploymentPackage
       children:
       - name: petclinic
