@@ -13,7 +13,7 @@ spec:
       - name: petclinic
         type: jee.War
         scanPlaceholders: true
-        file: !file "artifacts/PetClinic.war"
+        file: !file "../artifacts/PetClinic.war"
       - name: testPage
         type: smoketest.HttpRequestTest
         url: '{{smoke.test.url}}'
